@@ -1,42 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
 
-* {
+/* Reset de propriedades */
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Quicksand', sans-serif;
     color: grey;
 }
 
-header {
-    background-color: grey;
-}
-.header-flex {
-    display: flex;
-    justify-content: space-between;
-}
-
 .container-grid {
     width: 80%;
     margin: 0 auto;
-    background-color: purple;
 }
 
-#Logoux {
-    font-style: italic;
+header .header-flex { 
+    display: flex;
+    justify-content: space-between;
+}
+header {
+    background-color: grey;
+}
+
+header h1 {
     color: white;
-    width: 600;
+    font-weight: 300;
+}
+
+header h1 #logoux {
+    font-style: italic;
+    font-weight: 600;
+}
+
+header nav{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
 }
-h1 {
-    color: white;
-    width: 300;
-}
-
 
 header nav a {
     color: white;
     text-decoration: none;
+}
+
+/* MAIN */
+
+ main .colunas-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .coluna1{
+    width: 75%;
+    
+
+}
+
+main .coluna1 #Img{
+    width: 100%;
+}
+
+main .coluna2{
+    width: 20%;
+    
+}
+
+main h2{
+    margin-top: 10px;
+}
+
+main p{
+    margin-top: 10px;
+}
+
+/* Footer */
+
+footer{
+    margin-top: 20px;
+    background-color: grey;
+    color: white;
 }
