@@ -10,11 +10,14 @@
 body {
     font-family: 'Quicksand', sans-serif;
     color: grey;
+    background-color: #edeced;
 }
 
 .container-grid {
     width: 80%;
-    margin: 0 auto;
+    max-width: 1000px;  /* limite máximo de largura*/
+    min-width: 992px;   /* limite mínimo de largura*/
+    margin:  auto;     /* limite automático de  margem*/
 }
 
 header .header-flex { 
@@ -22,7 +25,7 @@ header .header-flex {
     justify-content: space-between;
 }
 header {
-    background-color: grey;
+    background-color: black;
 }
 
 header h1 {
@@ -53,35 +56,88 @@ header nav a {
  main .colunas-flex {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
+/* section com a class coluna1 */
 main .coluna1{
     width: 75%;
+    background-color: white;
     
+}
+main .coluna1 h2{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+}
 
+main .coluna1 p{
+    /* margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px; */
+
+    margin: 0 20px 20px 20px;
+    
+    line-height: 20px;
 }
 
 main .coluna1 #Img{
     width: 100%;
 }
 
+/* aside com a class coluna2 */
 main .coluna2{
     width: 20%;
     
 }
-
-main h2{
-    margin-top: 10px;
+main .coluna2 article{
+    background-color: white;
+    margin-bottom: 20px;
 }
 
-main p{
-    margin-top: 10px;
+main #In h3 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #EFEFEF;
 }
+
+main #In p {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+main #In input {
+    display: flex;
+    width: 75%;
+    height: 30px;
+    border: 2px solid #EFEFEF;
+    margin: 0 auto;
+}
+
+
 
 /* Footer */
 
 footer{
     margin-top: 20px;
-    background-color: grey;
+    padding-top: 20px;
+    padding-right: 0;
+    padding-bottom: 20px;
+    padding-left: 0;
+    
+    /* padding: 0; top right bottom left */
+    /* padding: 0 20px; top\bottom right/left */
+    /* padding: 0 20px 40; top right/left bottom */
+    
+    background-color: black;
     color: white;
 }
